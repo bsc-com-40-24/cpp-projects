@@ -1,0 +1,12 @@
+#include "Triangle.h"
+
+namespace shapes {
+    Triangle::Triangle() : base(0.0), height(0.0) {}
+    Triangle::Triangle(double b, double h) : base(b), height(h) {}
+    Triangle::~Triangle() {}
+
+    void Triangle::setBase(double b) { base = b; }
+    double Triangle::getBase() const { return base; }
+    void Triangle::setHeight(double h) { height = h; }
+    double Triangle::getHeight() const { return height; }
+}
